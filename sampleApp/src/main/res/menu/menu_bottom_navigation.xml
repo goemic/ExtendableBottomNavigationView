@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:title="@string/navigation_item_1_title"
+        android:icon="@drawable/ic_filter_1_black_24dp"/>
+    <item
+        android:id="@+id/item_2"
+        android:title="@string/navigation_item_2_title"
+        android:icon="@drawable/ic_filter_2_black_24dp" />
+    <item
+        android:id="@+id/item_3"
+        android:title="@string/navigation_item_3_title"
+        android:icon="@drawable/ic_filter_3_black_24dp" />
+    <item
+        android:id="@+id/item_4"
+        android:title="@string/navigation_item_4_title"
+        android:icon="@drawable/ic_filter_4_black_24dp" />
+    <item
+        android:id="@+id/item_5"
+        android:title="@string/navigation_item_5_title"
+        android:icon="@drawable/ic_filter_5_black_24dp" />
+    <item
+        android:id="@+id/item_6"
+        android:title="@string/navigation_item_6_title"
+        android:icon="@drawable/ic_filter_6_black_24dp" />
+</menu>

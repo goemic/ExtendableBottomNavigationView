@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExtendableBottomNavigationView</string>
+
+    <string name="navigation_item_1_title">Item 1</string>
+    <string name="navigation_item_2_title">Item 2</string>
+    <string name="navigation_item_3_title">Item 3</string>
+    <string name="navigation_item_4_title">Item 4</string>
+    <string name="navigation_item_5_title">Item 5</string>
+    <string name="navigation_item_6_title">Item 6</string>
+</resources>

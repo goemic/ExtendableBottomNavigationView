@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "de.goemic.extendablebottomnavigationview.sample"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:$androidx_appCompat"
+
+    implementation "androidx.core:core-ktx:$androidx_ktx"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    implementation project(":library")
+    // use this to test a specific version
+//    implementation 'com.github.goemic:ExtendableBottomNavigationView:1.0'
+
+    //
+    // tests
+    //
+    testImplementation "junit:junit:$test_junit"
+    androidTestImplementation "androidx.test:runner:$test_androidxTestRunner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$test_androidxTestEspresso"
+}
